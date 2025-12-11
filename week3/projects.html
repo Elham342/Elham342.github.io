@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Week 3 Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Elham Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-btn">Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>JavaScript Work</h2>
+      <p>These are the features I created in Week 3 of the internship.</p>
+    </section>
+
+    <section class="row">
+      <div class="box">
+        <h3>Dark Mode</h3>
+        <p>A button that switches the website theme using DOM and classes.</p>
+      </div>
+
+      <div class="box">
+        <h3>Year Auto-Update</h3>
+        <p>The year in the footer updates automatically using JavaScript Date().</p>
+      </div>
+
+      <div class="box">
+        <h3>Form Validation</h3>
+        <p>I used an event listener to check if fields are empty before submitting.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Elham</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

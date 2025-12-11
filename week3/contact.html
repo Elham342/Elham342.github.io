@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Week 3 Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Elham Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-btn">Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Contact Me</h2>
+      <p>This form is used to practice validation using JavaScript.</p>
+    </section>
+
+    <section>
+      <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" placeholder="Enter your name">
+
+        <label for="email">Your Email</label>
+        <input id="email" type="email" placeholder="Enter your email">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Write your message here"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Elham</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
