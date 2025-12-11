@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* --- Global Styles --- */
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease; /* smooth hover effects */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf0f7;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 25px;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 14px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-family: 'Italiana', serif;
+  margin: 0;
+  font-size: 1.8rem;
+  color: #ffe6f2; /* soft pink accent for title */
+}
+
+nav a {
+  color: #fff;
+  margin-left: 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+nav a.active {
+  border-bottom: 2px solid #ffb6d9;
+  padding-bottom: 2px;
+}
+
+nav a:hover {
+  color: #ffb6d9;
+  transform: translateY(-1px);
+}
+
+.theme-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ffb6d9;
+  color: #222;
+  font-weight: 500;
+}
+
+.theme-btn:hover {
+  background-color: #ffcce6;
+}
+
+/* --- Main Content --- */
+main {
+  padding: 25px;
+}
+
+.intro {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1 1 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffb6d9;
+  color: #222;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.contact-form button:hover {
+  background-color: #ffcce6;
+  transform: translateY(-1px);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* --- Footer --- */
+footer {
+  margin-top: 20px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 8px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+nav a {
+  color: #fff;
+  margin-left: 12px;
+  font-size: 0.9rem;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Layout */
+main {
+  padding: 20px;
+}
+
+.intro {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* To-Do App */
+.todo {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.todo-form label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.todo-form input {
+  flex: 1 1 220px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.todo-form button {
+  padding: 8px 14px;
+  border: none;
+  background: #222;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.task-list li {
+  background: #f0f0f0;
+  padding: 8px 10px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Buttons */
+.clear-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-buttons button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.done-btn {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.delete-btn {
+  background: #c62828;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .todo-form button {
+    width: 100%;
+  }
+}

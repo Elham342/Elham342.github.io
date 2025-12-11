@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final To-Do App - Week 5-8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Elham To-Do List</h1>
+    <nav>
+      <a href="index.html" class="active">App</a>
+      <a href="about.html">About</a>
+      <a href="readme.html">README</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Week 5-8 Final Version</h2>
+      <p>
+        This is the final version of my To-Do List project. In this phase I added
+        saving to localStorage, fixed the layout and wrote documentation.
+      </p>
+    </section>
+
+    <section class="todo">
+      <form id="todoForm" class="todo-form">
+        <label for="taskInput">New Task</label>
+        <input id="taskInput" type="text" placeholder="Write a task here">
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="taskList" class="task-list">
+        <!-- tasks added here -->
+      </ul>
+
+      <button id="clearAll" class="clear-btn">Clear All Tasks</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Elham</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
