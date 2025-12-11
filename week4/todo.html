@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do App - Week 4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Week 4 - To-Do App</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="todo.html" class="active">To-Do App</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>My To-Do List</h2>
+      <p>
+        This is the first working version of my To-Do List project.
+        Here I practiced basic DOM and JavaScript events.
+      </p>
+    </section>
+
+    <section class="todo">
+      <form id="todoForm" class="todo-form">
+        <label for="taskInput">New Task</label>
+        <input id="taskInput" type="text" placeholder="Write a task here">
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="taskList" class="task-list">
+        <!-- tasks appear here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Elham - Week 4</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
